@@ -1,0 +1,11 @@
+<?php
+
+/** @var Rmlocke\Downloads\Block\Downloads $block */
+
+$downloads = $block->getDownloads();
+
+foreach($downloads as $download)
+{
+    echo $download->getTitle();
+    echo '<br>';
+}

@@ -4,7 +4,7 @@ namespace Rmlocke\Downloads\Model;
 
 use \Magento\Framework\Model\AbstractModel;
 use \Magento\Framework\DataObject\IdentityInterface;
-use \Rmlocke\Downloads\Api\Data\PostInterface;
+use \Rmlocke\Downloads\Api\Data\DownloadInterface;
 
 /**
  * Class File
@@ -18,7 +18,7 @@ class Download extends AbstractModel implements DownloadInterface, IdentityInter
     const CACHE_TAG = 'rmlocke_downloads_download';
 
     /**
-     * Post Initialization
+     * Download Initialization
      * @return void
      */
     protected function _construct()
