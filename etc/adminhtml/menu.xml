@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+       <add id="Rmlocke_Downloads::downloads" title="Downloads" module="Rmlocke_Downloads" sortOrder="20" resource="Magento_Backend::content" />
+       <add id="Rmlocke_Downloads::download" title="Downloads" module="Rmlocke_Downloads" sortOrder="1" action="downloads/index/index" parent="Rmlocke_Downloads::downloads" resource="Magento_Backend::content" />
+   </menu>
+</config>

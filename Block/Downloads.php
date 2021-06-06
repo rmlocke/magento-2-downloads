@@ -8,7 +8,7 @@ use \Rmlocke\Downloads\Model\ResourceModel\Download\Collection as DownloadCollec
 use \Rmlocke\Downloads\Model\ResourceModel\Download\CollectionFactory as downloadCollectionFactory;
 use \Rmlocke\Downloads\Model\Download;
 
-class Dwonloads extends Template
+class Downloads extends Template
 {
     /**
      * CollectionFactory
@@ -37,7 +37,9 @@ class Dwonloads extends Template
      */
     public function getDownloads()
     {
-        /** @var DownloadCollection $downloadCollection */
+        /**
+         * @var DownloadCollection $downloadCollection
+         */
         $downloadCollection = $this->_downloadCollectionFactory->create();
         $downloadCollection->addFieldToSelect('*')->load();
         return $downloadCollection->getItems();
